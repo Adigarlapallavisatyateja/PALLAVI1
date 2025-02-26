@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chessboard</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f8f8;
+        }
+        table {
+            border-collapse: collapse;
+            border: 5px solid black;
+        }
+        td {
+            width: 60px;
+            height: 60px;
+        }
+        /* Apply colors correctly */
+        tr:nth-child(even) td:nth-child(odd), 
+        tr:nth-child(odd) td:nth-child(even) {
+            background-color: black;
+        }
+        tr:nth-child(even) td:nth-child(even), 
+        tr:nth-child(odd) td:nth-child(odd) {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <!-- 8 rows for the chessboard -->
+        <tr>
+            <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+        </tr>
+        <tr>
+            <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+        </tr>
+        <tr>
+            <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+        </tr>
+        <tr>
+            <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+        </tr>
+        <tr>
+            <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+        </tr>
+        <tr>
+            <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+        </tr>
+        <tr>
+            <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+        </tr>
+        <tr>
+            <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+        </tr>
+    </table>
+</body>
+</html>
